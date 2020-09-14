@@ -1,4 +1,4 @@
-﻿
+
 # Task1 赛题理解
 
 Tip：本次新人赛是Datawhale与天池联合发起的0基础入门系列赛事第四场 —— 零基础入门金融风控之贷款违约预测挑战赛。
@@ -119,6 +119,7 @@ AUC（Area Under Curve）被定义为	ROC曲线	下与坐标轴围成的面积�
 
 1、KS(Kolmogorov-Smirnov)
 K-S曲线与ROC曲线类似，不同在于
+
 - ROC曲线将真正例率和假正例率作为横纵轴
 - K-S曲线将真正例率和假正例率都作为纵轴，横轴则由选定的阈值来充当。
 公式如下：
@@ -160,7 +161,7 @@ print('TestA data shape:',testA.shape)
 
     Train data shape: (800000, 47)
     TestA data shape: (200000, 48)
-    
+
 
 
 ```python
@@ -179,11 +180,10 @@ train.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -335,7 +335,7 @@ train.head()
   </tbody>
 </table>
 <p>5 rows × 47 columns</p>
-</div>
+
 
 
 
@@ -354,7 +354,7 @@ print('混淆矩阵:\n',confusion_matrix(y_true, y_pred))
     混淆矩阵:
      [[1 1]
      [1 1]]
-    
+
 
 
 ```python
@@ -366,7 +366,7 @@ print('ACC:',accuracy_score(y_true, y_pred))
 ```
 
     ACC: 0.5
-    
+
 
 
 ```python
@@ -382,7 +382,7 @@ print('F1-score:',metrics.f1_score(y_true, y_pred))
     Precision 0.5
     Recall 0.5
     F1-score: 0.5
-    
+
 
 
 ```python
@@ -442,7 +442,7 @@ print('AUC socre:',roc_auc_score(y_true, y_scores))
 ```
 
     AUC socre: 0.75
-    
+
 
 
 ```python
@@ -456,7 +456,7 @@ print('KS值：',KS)
 ```
 
     KS值： 0.5238095238095237
-    
+
 
 ## 1.4 经验总结
 赛题理解是开始比赛的第一步，赛题的理解有助于对竞赛全局的把握。通过赛题理解有助于对赛题的业务逻辑把握，对于后期的特征工程构建和模型选择都尤为重要。
